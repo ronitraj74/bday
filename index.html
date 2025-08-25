@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday 🎂</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #3c1053, #ad5389);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 40px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #ff99cc, 0 0 10px #ff3399; }
+      to { text-shadow: 0 0 20px #ff3399, 0 0 30px #ff0066; }
+    }
+
+    /* Balloons */
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 60px;
+      height: 80px;
+      background: red;
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .balloon:before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+      background: #fff;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(-300px) rotate(15deg); }
+      100% { transform: translateY(-600px) rotate(-15deg); }
+    }
+
+    .balloon:nth-child(1) { left: 10%; background: #ff4d4d; animation-duration: 7s; }
+    .balloon:nth-child(2) { left: 30%; background: #4da6ff; animation-duration: 9s; }
+    .balloon:nth-child(3) { left: 50%; background: #33cc33; animation-duration: 6s; }
+    .balloon:nth-child(4) { left: 70%; background: #ffcc00; animation-duration: 8s; }
+    .balloon:nth-child(5) { left: 90%; background: #ff66cc; animation-duration: 10s; }
+
+    /* Cake */
+    .cake {
+      margin: 50px auto;
+      width: 150px;
+      height: 100px;
+      background: #663300;
+      border-radius: 0 0 20px 20px;
+      position: relative;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .cake:before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 25px;
+      width: 100px;
+      height: 30px;
+      background: #ffcc99;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .candle {
+      position: absolute;
+      top: -50px;
+      left: 65px;
+      width: 20px;
+      height: 50px;
+      background: #fff;
+    }
+
+    .flame {
+      position: absolute;
+      top: -20px;
+      left: 4px;
+      width: 12px;
+      height: 20px;
+      background: gold;
+      border-radius: 50%;
+      animation: flicker 0.2s infinite alternate;
+    }
+
+    @keyframes flicker {
+      from { transform: scale(1) rotate(0deg); opacity: 0.8; }
+      to { transform: scale(1.2) rotate(5deg); opacity: 1; }
+    }
+
+    /* Note Section */
+    .note {
+      margin: 30px auto;
+      max-width: 600px;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    /* Photo section */
+    .photos {
+      margin: 50px auto;
+      max-width: 800px;
+    }
+
+    .photos h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 15px #ffd700;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 3px solid #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 30px rgba(255,215,0,0.8);
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday Aakriti❤️💕🎂</h1>
+
+  <!-- Balloons -->
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+
+  <!-- Cake -->
+  <div class="cake">
+    <div class="candle">
+      <div class="flame"></div>
+    </div>
+  </div>
+
+  <!-- Note Section -->
+  <div class="note">
+    <p>Dear Aakriti 💕 ,</p>
+    <p>Wishing you the happiest birthday filled with laughter, joy, and all the things you love.  
+       May this year bring you endless happiness and success! 🎁✨</p>
+    <p>From, <br>Ronit and Gillu❤️</p>
+  </div>
+
+  <!-- Photo Section -->
+  <div class="photos">
+    <h2>📸 Our Memories Together</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Photo 1">
+      <img src="photo2.jpg" alt="Photo 2">
+      <img src="photo3.jpg" alt="Photo 3">
+      <img src="photo4.jpg" alt="Photo 4">
+    </div>
+  </div>
+</body>
+</html>
+<!-- c:\Users\iamro\Downloads\WhatsApp Image 2025-08-26 at 01.09.20_930c9405.jpg -->
+ made with ❤️ and 🥰 for 💕 
